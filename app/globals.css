@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+:root {
+  /* 你的 HTML 中的配色方案 */
+  --primary-color: #5D9C59;       /* 主题绿 */
+  --primary-dark: #3E6D3B;        /* 深绿 */
+  --secondary-color: #F0F7EF;     /* 浅绿背景 */
+  --text-dark: #2C3E50;           /* 深色文字 */
+  --text-light: #666666;          /* 浅色文字 */
+  --accent-red: #E74C3C;          /* 紧急色 */
+
+  /* Shadcn 映射 */
+  --background: 0 0% 100%;
+  --foreground: 210 20% 25%; /* #2C3E50 converted roughly */
+  
+  --card: 0 0% 100%;
+  --card-foreground: 210 20% 25%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 20% 25%;
+  
+  --primary: 117 27% 48%; /* #5D9C59 */
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 112 33% 95%; /* #F0F7EF */
+  --secondary-foreground: 210 20% 25%;
+  
+  --muted: 112 33% 95%;
+  --muted-foreground: 215 16% 47%;
+  
+  --accent: 112 33% 95%;
+  --accent-foreground: 210 20% 25%;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 117 27% 48%;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-slate-800 font-sans antialiased;
+    /* Noto Sans 风格 */
+    font-family: 'Noto Sans SC', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-[#2C3E50] font-bold;
+  }
+}
+
+@layer utilities {
+  /* 标题下划线样式 */
+  .section-title-bar::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #5D9C59;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  /* 悬停卡片上浮效果 */
+  .hover-card-up {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-transparent hover:border-[#5D9C59]/30;
+  }
+}

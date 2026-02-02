@@ -1,0 +1,35 @@
+{
+  "node": {
+    "60a6718a470945b30bab300aa74c996afed6c2d6df": {
+      "workers": {
+        "app/counselor/cases/page": {
+          "moduleId": "[project]/.next-internal/server/app/counselor/cases/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getAppointments",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/counselor/cases/page": "action-browser"
+      },
+      "exportedName": "getAppointments",
+      "filename": "app/actions.ts"
+    },
+    "603891c61866a64c09b7fc48522c944068d0b5f0c7": {
+      "workers": {
+        "app/counselor/cases/page": {
+          "moduleId": "[project]/.next-internal/server/app/counselor/cases/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateConsultationRecord",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/counselor/cases/page": "action-browser"
+      },
+      "exportedName": "updateConsultationRecord",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}

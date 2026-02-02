@@ -1,0 +1,20 @@
+{
+  "node": {
+    "407ab247e9c7485991e18a9203d13ca1c8c1535250": {
+      "workers": {
+        "app/admin/content/editor/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/content/editor/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createArticle",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/content/editor/page": "action-browser"
+      },
+      "exportedName": "createArticle",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}

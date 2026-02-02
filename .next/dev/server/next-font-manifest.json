@@ -1,0 +1,61 @@
+{
+  "app": {
+    "[project]/app/_not-found/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/admin/content/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/admin/dashboard/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/admin/users/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/auth/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/counselor/cases/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/counselor/chat/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/counselor/dashboard/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/counselor/interventions/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/counselor/schedule/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/student/ai-companion/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/student/articles/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/student/assessment/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/student/booking/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/student/chat/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/student/dashboard/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ],
+    "[project]/app/student/video/page": [
+      "static/media/feb57b2dc8f29018-s.p.fc277c93.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

@@ -1,0 +1,188 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// 用户表
+model User {
+  id        String   @id @default(uuid())
+  username  String   @unique
+  password  String
+  name      String
+  role      String
+  college   String?
+  avatar    String?
+  createdAt DateTime @default(now())
+  
+riskLevel String   @default("normal")
+
+studentInterventions   Intervention[] @relation("StudentInterventions")
+  counselorInterventions Intervention[] @relation("CounselorInterventions")
+
+  // 这里的关联名称要和下面 Appointment 里的 relation name 对应
+  studentAppointments   Appointment[] @relation("StudentAppointments")
+  counselorAppointments Appointment[] @relation("CounselorAppointments")
+assessments AssessmentResult[]
+  sentMessages      Message[] @relation("SentMessages")
+  receivedMessages  Message[] @relation("ReceivedMessages")
+
+  schedules         Schedule[]
+}
+
+model Intervention {
+  id          String   @id @default(cuid())
+  
+  studentId   String
+  student     User     @relation("StudentInterventions", fields: [studentId], references: [id])
+  
+  counselorId String
+  counselor   User     @relation("CounselorInterventions", fields: [counselorId], references: [id])
+  
+  status      String   @default("pending") // pending(已发送/待处理), accepted(已接受/去预约), rejected(已拒绝)
+  message     String?  // 咨询师写的寄语，例如“最近压力大吗？来聊聊吧”
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// 预约表 (整合了详细字段和测评关联)
+model Appointment {
+  id            String   @id @default(cuid())
+  date          DateTime
+  time          String
+  status        String   @default("pending") // pending, confirmed, rejected, completed
+  
+  // ✅ 必须新增这一行！(解决报错的关键)
+  isCrisis      Boolean  @default(false)     // 是否危机干预
+
+  // --- 新增：学生详细档案 ---
+  idCard        String?  // 身份证
+  studentIdNum  String?  // 学号
+  phone         String?  // 手机号
+  college       String?  // 学院
+  major         String?  // 专业
+  grade         String?  // 年级
+  classInfo     String?  // 班级
+  mentalHistory String?  // 精神疾病史
+  physicalState String?  // 目前身体状态
+  problemType   String?  // 咨询问题类型
+  
+  notes         String?  @db.Text
+
+  // 关联关系
+  studentId     String
+  student       User     @relation("StudentAppointments", fields: [studentId], references: [id])
+  counselorId   String
+  counselor     User     @relation("CounselorAppointments", fields: [counselorId], references: [id])
+  
+  // --- 新增：关联测评结果 ---
+  testResult    TestResult?
+  
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+// 心理测评结果表
+model TestResult {
+  id            String      @id @default(cuid())
+  appointmentId String      @unique
+  appointment   Appointment @relation(fields: [appointmentId], references: [id])
+  
+  // 量表分数
+  sdsScore      Int?        // 抑郁自评量表分
+  sasScore      Int?        // 焦虑自评量表分
+  sesScore      Int?        // 自尊量表分
+  
+  // 原始答卷 (JSON)
+  rawAnswers    Json?       
+  
+  // ✅ 新增：风险评估字段 (解决报错的关键)
+  isHighRisk    Boolean     @default(false) // 是否高风险
+  riskLevel     String      @default("normal") // 风险等级: normal, yellow, orange, red
+
+  createdAt     DateTime    @default(now())
+}
+
+// 文章表
+model Article {
+  id        String   @id @default(uuid())
+  title     String
+  category  String
+  summary   String
+  content   String   @db.Text
+  image     String?
+  status    String
+  views     Int      @default(0)
+  author    String
+  createdAt DateTime @default(now())
+}
+
+// 测评记录表 (这是一个简单的老表，如果不想要可以删掉，现在主要用 TestResult)
+model Assessment {
+  id        String   @id @default(uuid())
+  studentId String
+  type      String
+  score     Int
+  result    String
+  createdAt DateTime @default(now())
+}
+
+// 系统配置表
+model SystemConfig {
+  id            String   @id @default(cuid())
+  platformName  String   @default("高校心理咨询平台")
+  hotline       String   @default("010-12345678")
+  openHours     String   @default("周一至周五 08:30 - 17:30")
+  maintenanceMode Boolean  @default(false)
+  updatedAt     DateTime @updatedAt
+}
+
+// 消息表
+model Message {
+  id         String   @id @default(cuid())
+  content    String   // 消息内容
+  senderId   String   // 发送者ID
+  receiverId String   // 接收者ID
+  createdAt  DateTime @default(now())
+  read       Boolean  @default(false) // 是否已读
+
+  // 关联关系
+  sender     User     @relation("SentMessages", fields: [senderId], references: [id])
+  receiver   User     @relation("ReceivedMessages", fields: [receiverId], references: [id])
+}
+
+// 咨询师排班表
+model Schedule {
+  id          String   @id @default(cuid())
+  counselorId String   // 关联的咨询师
+  dayOfWeek   Int      // 周几 (1=周一, 5=周五)
+  timeSlot    String   // 时间段 (例如 "08:30 - 09:20")
+  isAvailable Boolean  @default(true) // 是否开放
+  
+  // 关联
+  counselor   User     @relation(fields: [counselorId], references: [id])
+
+  // 确保同一个咨询师在同一天的同一个时间段只有一条记录
+  @@unique([counselorId, dayOfWeek, timeSlot])
+}
+
+// ✅ 新增：心理测评中心记录表 (用于 PHQ-9, GAD-7, PSS-10 等独立测评)
+model AssessmentResult {
+  id        String   @id @default(cuid())
+  
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  
+  type      String   // 量表类型: "phq9", "gad7", "pss"
+  score     Int      // 总分
+  result    String   // 结果文本，如 "PHQ-9: 15分 (中高风险)"
+  isHighRisk Boolean @default(false) // 是否触发预警
+
+  createdAt DateTime @default(now())
+}

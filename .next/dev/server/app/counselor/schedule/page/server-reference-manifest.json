@@ -1,0 +1,35 @@
+{
+  "node": {
+    "40de132af61ba01e723550b42711e9dd737ac620e9": {
+      "workers": {
+        "app/counselor/schedule/page": {
+          "moduleId": "[project]/.next-internal/server/app/counselor/schedule/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getCounselorSchedule",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/counselor/schedule/page": "action-browser"
+      },
+      "exportedName": "getCounselorSchedule",
+      "filename": "app/actions.ts"
+    },
+    "6027ad75deeea94e4c29d226f1aecde8baddc6c7e9": {
+      "workers": {
+        "app/counselor/schedule/page": {
+          "moduleId": "[project]/.next-internal/server/app/counselor/schedule/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateSchedule",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/counselor/schedule/page": "action-browser"
+      },
+      "exportedName": "updateSchedule",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}

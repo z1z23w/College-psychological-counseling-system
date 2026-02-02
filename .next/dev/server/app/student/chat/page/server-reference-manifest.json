@@ -1,0 +1,80 @@
+{
+  "node": {
+    "40c2fcb384938738311a223be1b7121afc514580e9": {
+      "workers": {
+        "app/student/chat/page": {
+          "moduleId": "[project]/.next-internal/server/app/student/chat/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "checkPendingInterventions",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/student/chat/page": "action-browser"
+      },
+      "exportedName": "checkPendingInterventions",
+      "filename": "app/actions.ts"
+    },
+    "60d06e6e862e7cff8c80ec7e8674ceb819581ce006": {
+      "workers": {
+        "app/student/chat/page": {
+          "moduleId": "[project]/.next-internal/server/app/student/chat/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "respondToIntervention",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/student/chat/page": "action-browser"
+      },
+      "exportedName": "respondToIntervention",
+      "filename": "app/actions.ts"
+    },
+    "6004d38bb3cc7c7f3dd16bff23ff34790521ec9dcd": {
+      "workers": {
+        "app/student/chat/page": {
+          "moduleId": "[project]/.next-internal/server/app/student/chat/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getChatContacts",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/student/chat/page": "action-browser"
+      },
+      "exportedName": "getChatContacts",
+      "filename": "app/actions.ts"
+    },
+    "6017fcbb10440c8f1538df4316c6f53318c6a9c746": {
+      "workers": {
+        "app/student/chat/page": {
+          "moduleId": "[project]/.next-internal/server/app/student/chat/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getMessages",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/student/chat/page": "action-browser"
+      },
+      "exportedName": "getMessages",
+      "filename": "app/actions.ts"
+    },
+    "70f9fa8362bf578f8ee79da562b009f8b38064878d": {
+      "workers": {
+        "app/student/chat/page": {
+          "moduleId": "[project]/.next-internal/server/app/student/chat/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "sendMessage",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/student/chat/page": "action-browser"
+      },
+      "exportedName": "sendMessage",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}

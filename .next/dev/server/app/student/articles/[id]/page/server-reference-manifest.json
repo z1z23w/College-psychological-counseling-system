@@ -1,0 +1,50 @@
+{
+  "node": {
+    "40c2fcb384938738311a223be1b7121afc514580e9": {
+      "workers": {
+        "app/student/articles/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/student/articles/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "checkPendingInterventions",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/student/articles/[id]/page": "action-browser"
+      },
+      "exportedName": "checkPendingInterventions",
+      "filename": "app/actions.ts"
+    },
+    "60d06e6e862e7cff8c80ec7e8674ceb819581ce006": {
+      "workers": {
+        "app/student/articles/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/student/articles/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "respondToIntervention",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/student/articles/[id]/page": "action-browser"
+      },
+      "exportedName": "respondToIntervention",
+      "filename": "app/actions.ts"
+    },
+    "4076c1fffee5862a62b264ab4b023657c8d9e4b639": {
+      "workers": {
+        "app/student/articles/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/student/articles/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getArticleById",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/student/articles/[id]/page": "action-browser"
+      },
+      "exportedName": "getArticleById",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}

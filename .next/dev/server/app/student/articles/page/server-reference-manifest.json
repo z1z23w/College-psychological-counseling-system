@@ -1,0 +1,50 @@
+{
+  "node": {
+    "40c2fcb384938738311a223be1b7121afc514580e9": {
+      "workers": {
+        "app/student/articles/page": {
+          "moduleId": "[project]/.next-internal/server/app/student/articles/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "checkPendingInterventions",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/student/articles/page": "action-browser"
+      },
+      "exportedName": "checkPendingInterventions",
+      "filename": "app/actions.ts"
+    },
+    "60d06e6e862e7cff8c80ec7e8674ceb819581ce006": {
+      "workers": {
+        "app/student/articles/page": {
+          "moduleId": "[project]/.next-internal/server/app/student/articles/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "respondToIntervention",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/student/articles/page": "action-browser"
+      },
+      "exportedName": "respondToIntervention",
+      "filename": "app/actions.ts"
+    },
+    "00cfc92782635b92b803fc2bde935ced14749c2d6d": {
+      "workers": {
+        "app/student/articles/page": {
+          "moduleId": "[project]/.next-internal/server/app/student/articles/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getArticles",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/student/articles/page": "action-browser"
+      },
+      "exportedName": "getArticles",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}

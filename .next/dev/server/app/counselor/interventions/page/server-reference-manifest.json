@@ -1,0 +1,35 @@
+{
+  "node": {
+    "003b6233f928d4de0ec767b42f46fc1b559b96d8bc": {
+      "workers": {
+        "app/counselor/interventions/page": {
+          "moduleId": "[project]/.next-internal/server/app/counselor/interventions/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getRiskStudents",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/counselor/interventions/page": "action-browser"
+      },
+      "exportedName": "getRiskStudents",
+      "filename": "app/actions.ts"
+    },
+    "70001983a346de85aa0dade685d11e734730583f1b": {
+      "workers": {
+        "app/counselor/interventions/page": {
+          "moduleId": "[project]/.next-internal/server/app/counselor/interventions/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "sendInterventionReminder",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/counselor/interventions/page": "action-browser"
+      },
+      "exportedName": "sendInterventionReminder",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,35 @@
+{
+  "node": {
+    "60a6718a470945b30bab300aa74c996afed6c2d6df": {
+      "workers": {
+        "app/counselor/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/counselor/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getAppointments",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/counselor/dashboard/page": "action-browser"
+      },
+      "exportedName": "getAppointments",
+      "filename": "app/actions.ts"
+    },
+    "600bbc7dfe8b9e2ee4faccc1fd242b57913346d9a8": {
+      "workers": {
+        "app/counselor/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/counselor/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateAppointmentStatus",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/counselor/dashboard/page": "action-browser"
+      },
+      "exportedName": "updateAppointmentStatus",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,42 @@
+{
+  "sorted_middleware": [
+    "/api/chat/route"
+  ],
+  "middleware": {},
+  "instrumentation": null,
+  "functions": {
+    "/api/chat/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/server-reference-manifest.js",
+        "server/app/api/chat/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_api_chat_route_actions_65685355.js",
+        "server/edge/chunks/node_modules_next_dist_esm_d7e42d52._.js",
+        "server/edge/chunks/node_modules_next_dist_compiled_9d1d39d4._.js",
+        "server/edge/chunks/node_modules_next_dist_7bea040f._.js",
+        "server/edge/chunks/edge-wrapper_d7ce9b1c.js",
+        "server/edge/chunks/node_modules_@opentelemetry_api_build_esm_5713bd62._.js",
+        "server/edge/chunks/[root-of-the-server]__9db4bc9a._.js",
+        "server/edge/chunks/turbopack-edge-wrapper_6a93e58e.js"
+      ],
+      "name": "app/api/chat/route",
+      "page": "/api/chat/route",
+      "matchers": [
+        {
+          "regexp": "^/api/chat(?:/)?$",
+          "originalSource": "/api/chat"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "KgQVMUl4vWx7feNP9r/oNFmblKKlYX0SQ8PDfNUVxzs=",
+        "__NEXT_PREVIEW_MODE_ID": "92956adde6e0abbfcabe486ab1c74f9f",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "646fa5d1de1eb7cec0fbced8520e392b24267845573fa91c201a3760aac83f99",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "48db87160c28fc7b9cbc33504aa25ad05b0c779ba520a05ace5ca2f88fa8d12d"
+      }
+    }
+  }
+}

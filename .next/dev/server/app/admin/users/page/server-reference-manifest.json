@@ -1,0 +1,65 @@
+{
+  "node": {
+    "40582840976840dcb9e19fbe1809bdcc094e60849a": {
+      "workers": {
+        "app/admin/users/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/users/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createUser",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/page": "action-browser"
+      },
+      "exportedName": "createUser",
+      "filename": "app/actions.ts"
+    },
+    "002337fe5445dba398cbfff16255654f9fc2c93f70": {
+      "workers": {
+        "app/admin/users/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/users/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getUsers",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/page": "action-browser"
+      },
+      "exportedName": "getUsers",
+      "filename": "app/actions.ts"
+    },
+    "4020f3f2fb9b6d05e04700047d03d95155a47cd242": {
+      "workers": {
+        "app/admin/users/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/users/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteUser",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/page": "action-browser"
+      },
+      "exportedName": "deleteUser",
+      "filename": "app/actions.ts"
+    },
+    "60fc8622b99530666f349f8326e1b99243b435875b": {
+      "workers": {
+        "app/admin/users/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/users/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateUser",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/page": "action-browser"
+      },
+      "exportedName": "updateUser",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}

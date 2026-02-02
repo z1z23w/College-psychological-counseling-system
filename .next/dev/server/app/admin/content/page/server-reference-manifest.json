@@ -1,0 +1,35 @@
+{
+  "node": {
+    "00cfc92782635b92b803fc2bde935ced14749c2d6d": {
+      "workers": {
+        "app/admin/content/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/content/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getArticles",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/content/page": "action-browser"
+      },
+      "exportedName": "getArticles",
+      "filename": "app/actions.ts"
+    },
+    "40c279fd8f6c5d86ee066418e188815dcb5b57afe9": {
+      "workers": {
+        "app/admin/content/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/content/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteArticle",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/content/page": "action-browser"
+      },
+      "exportedName": "deleteArticle",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}
